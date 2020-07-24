@@ -16,7 +16,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form action="/guestbook/main/add" method="post">
+	<form action="/main/add" method="post">
 		<table border="1" width="500">
 			<tr>
 				<td>이름</td><td><input type="text" name="name"></td>
@@ -41,7 +41,7 @@
 				<td>[${count - status.index }]</td>   <!-- status.index 는 0부터 순서이다. -->
 				<td>${vo.name }</td>
 				<td>${vo.regDate }</td>
-				<td><a href="/guestbook/main/deleteform?no=${vo.no }">삭제</a></td>
+				<td><a href="/main/deleteform?no=${vo.no }">삭제</a></td>
 			</tr>
 			<tr>
 				<!--  개행(\n)을 JSTL에서 사용할 수  없어서 page context에 다른 변수로 추가해줘야함 -->

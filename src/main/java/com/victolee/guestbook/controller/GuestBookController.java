@@ -36,7 +36,7 @@ public class GuestBookController {
 	}
 	
 	// 게시글 등록
-	@RequestMapping(value="/", method=RequestMethod.POST)
+	@RequestMapping(value="/add", method=RequestMethod.POST)
 	public String insert(GuestBookVO vo){
 		guestBookService.insert(vo);
 		return "redirect:/main/";

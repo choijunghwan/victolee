@@ -21,12 +21,12 @@ public class GuestBookDAO {
 	}
 	
 	public String getPwd(Integer no){
-		String pwd = sqlSession.selectOne("guestbook.getOriginPwd");
+		String pwd = sqlSession.selectOne("guestbook.getOriginPwd", no);
 		return pwd;
 	}
 	
 	public String getInputPwd(String pwd){
-		String parsePwd = sqlSession.selectOne("guestbook.getInputPwd");
+		String parsePwd = sqlSession.selectOne("guestbook.getInputPwd", pwd);
 		return parsePwd;
 	}
 	
