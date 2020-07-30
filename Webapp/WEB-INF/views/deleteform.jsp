@@ -11,7 +11,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form action="/main/delete?no=${param.no }" method="post">
+	<form action="/main/delete.do?no=${param.no }" method="post">
 		<table>
 			<tr>
 				<td>비밀번호></td>
@@ -21,6 +21,6 @@
 			</tr>
 		</table>
 	</form>
-	<a href="/main/">메인으로 돌아가기</a>
+	<a href="/main/.do">메인으로 돌아가기</a>
 </body>
 </html>
